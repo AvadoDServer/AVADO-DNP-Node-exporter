@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+  node-exporter.avado.dappnode.eth:
+    build: ./build
+    image: 'node-exporter.avado.dappnode.eth:0.0.1'
+    restart: always
+    volumes:
+      - '/:/host:ro,rslave'
+      - '/etc/hostname:/etc/nodename:ro'
+      - '/proc:/host/proc:ro'
+      - '/sys:/host/sys:ro'
+      - '/etc/localtime:/etc/localtime:ro'
+      - '/etc/timezone:/etc/TZ:ro'
+    ports:
+      - '9100:9100/tcp'
+volumes:
+  data: {}

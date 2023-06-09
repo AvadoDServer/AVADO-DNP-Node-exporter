@@ -1,0 +1,25 @@
+{
+  "name": "node-exporter.avado.dappnode.eth",
+  "version": "0.0.1",
+  "description": "avado-dnp-node-exporter.avado.dappnode.eth description",
+  "autoupdate": true,
+  "title": "Node Exporter for Prometheus",
+  "type": "library",
+  "avatar": "/ipfs/QmYRmFCtdXvqq3drc6kBXxeWiiMatTfKVpVrmLX883cQbR",
+  "author": "sp",
+  "image": {
+    "volumes": [
+      "/:/host:ro,rslave",
+      "/etc/hostname:/etc/nodename:ro",
+      "/proc:/host/proc:ro",
+      "/sys:/host/sys:ro",
+      "/etc/localtime:/etc/localtime:ro",
+      "/etc/timezone:/etc/TZ:ro"
+    ],
+    "ports": [
+      "9100:9100/tcp"
+    ],
+    "environment": []
+  },
+  "license": "GPL-3.0"
+}
