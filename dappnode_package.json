@@ -19,7 +19,8 @@
     "ports": [
       "9100:9100/tcp"
     ],
-    "environment": []
+    "environment": [],
+    "restart": "always"
   },
   "license": "GPL-3.0"
 }
