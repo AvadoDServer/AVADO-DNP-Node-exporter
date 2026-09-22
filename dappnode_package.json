@@ -1,24 +1,18 @@
 {
   "name": "node-exporter.avado.dappnode.eth",
-  "version": "0.0.1",
-  "description": "avado-dnp-node-exporter.avado.dappnode.eth description",
+  "version": "0.0.2",
+  "upstream": "v1.12.1",
+  "description": "Exposes this AVADO's hardware and OS metrics (CPU, memory, disk, network) for Prometheus.",
   "autoupdate": true,
-  "title": "Node Exporter for Prometheus",
+  "title": "Node exporter",
   "type": "library",
   "avatar": "/ipfs/QmYRmFCtdXvqq3drc6kBXxeWiiMatTfKVpVrmLX883cQbR",
   "author": "sp",
   "image": {
     "volumes": [
-      "/:/host:ro,rslave",
-      "/etc/hostname:/etc/nodename:ro",
-      "/proc:/host/proc:ro",
-      "/sys:/host/sys:ro",
-      "/etc/localtime:/etc/localtime:ro",
-      "/etc/timezone:/etc/TZ:ro"
+      "/:/host:ro,rslave"
     ],
-    "ports": [
-      "9100:9100/tcp"
-    ],
+    "ports": [],
     "environment": [],
     "restart": "always"
   },
