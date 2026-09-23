@@ -2,7 +2,7 @@ version: '3.4'
 services:
   node-exporter.avado.dappnode.eth:
     build: ./build
-    image: 'node-exporter.avado.dappnode.eth:0.0.2'
+    image: 'node-exporter.avado.dappnode.eth:0.0.3'
     restart: always
     volumes:
       - '/:/host:ro,rslave'

@@ -1,6 +1,6 @@
 {
   "name": "node-exporter.avado.dappnode.eth",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "upstream": "v1.12.1",
   "description": "Exposes this AVADO's hardware and OS metrics (CPU, memory, disk, network) for Prometheus.",
   "autoupdate": true,
